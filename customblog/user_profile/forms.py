@@ -14,3 +14,15 @@ class ProfileForm(forms.ModelForm):
 			'title_color': TextInput(attrs={'type': 'color'}),
 			'text_color': TextInput(attrs={'type': 'color'}),
 		}
+
+class ProfileFormAdmin(forms.ModelForm):
+	class Meta:
+		model = Profile
+		fields = '__all__'
+		widgets = {
+			'header_color': TextInput(attrs={'type': 'color'}),
+			'header_text_color': TextInput(attrs={'type': 'color'}),
+			'bg_color': TextInput(attrs={'type': 'color'}),
+			'title_color': TextInput(attrs={'type': 'color'}),
+			'text_color': TextInput(attrs={'type': 'color'}),
+		}

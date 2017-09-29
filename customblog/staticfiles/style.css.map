@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../Users/nicolle/Workspace/custom-blog-theming/customblog/static/style.css",
+	"sources": [
+		"../Users/nicolle/Workspace/custom-blog-theming/customblog/static/style.scss"
+	],
+	"names": [],
+	"mappings": "AAOA,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,IAAI,GACZ;;AAED,AAAA,IAAI,CAAC;EACJ,gBAAgB,EAVN,OAAqB;EAW/B,MAAM,EAAE,IAAI,GACZ;;AAED,AAAA,KAAK,CAAC;EACL,gBAAgB,EAjBF,OAAyB,GAsBvC;EAND,AAGC,KAHI,CAGJ,MAAM,CAAC;IACN,KAAK,EAnBa,OAA8B,CAmBtB,UAAU,GACpC;;AAGF,AAAA,WAAW,CAAC;EACX,KAAK,EAtBQ,OAAwB,CAsBjB,UAAU,GAC9B;;AAED,AAAA,aAAa,CAAC;EACb,KAAK,EAzBO,OAAuB,GA0BnC;;AAED,AAAA,YAAY,CAAC;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI,GACZ;;AAED,AAAA,WAAW,CAAC;EACX,KAAK,EAAE,IAAI,GACX"
+}

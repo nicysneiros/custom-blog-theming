@@ -1,0 +1,26 @@
+html {
+  height: 100%; }
+
+body {
+  background-color: #cdafff;
+  height: 100%; }
+
+.hero {
+  background-color: #fa0067; }
+  .hero .title {
+    color: #26fff0 !important; }
+
+.post-title {
+  color: #6d18b7 !important; }
+
+.post-content {
+  color: #000000; }
+
+.login-panel {
+  width: 40%;
+  margin: auto; }
+
+.login-form {
+  width: 100%; }
+
+/*# sourceMappingURL=../../../../../../static/style.css.map */

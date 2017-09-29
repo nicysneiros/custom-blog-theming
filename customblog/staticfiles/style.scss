@@ -1,0 +1,40 @@
+$header-color: get-setting(header_color);
+$header-text-color: get-setting(header_text_color);
+$bg-color: get-setting(bg_color);
+$title-color: get-setting(title_color);
+$text-color: get-setting(text_color);
+
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: $bg-color;
+	height: 100%;
+}
+
+.hero {
+	background-color: $header-color;
+
+	.title {
+		color: $header-text-color !important;
+	}
+}
+
+.post-title {
+	color: $title-color !important;
+}
+
+.post-content {
+	color: $text-color;
+}
+
+.login-panel {
+	width: 40%;
+	margin: auto;
+}
+
+.login-form {
+	width: 100%;
+}
