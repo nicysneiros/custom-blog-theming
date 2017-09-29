@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <div class="panel login-panel">
+    <p class="panel-heading">Login</p>
+    <div class="panel-block">
+      <form method="post" class="login-form">
+      {% csrf_token %}
+      <div class="field">
+        <div class="control">
+          <input 
+            id="{{ form.username.id_for_label }}" 
+            name="{{ form.username.html_name }}"
+            value="{{ form.username.value | default_if_none:'' }}" 
+            class="input" type="text" placeholder="Username">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <input 
+            id="{{ form.password.id_for_label }}" 
+            name="{{ form.password.html_name }}"
+            value="{{ form.password.value | default_if_none:'' }}" 
+            class="input" type="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button" type="submit">
+            Login
+          </button>
+        </p>
+      </div>
+    </form>
+    </div>
+  </div>
+</section>
+{% endblock content%}
