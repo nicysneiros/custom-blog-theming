@@ -1,7 +1,7 @@
 from django.conf.urls import url
-
-from . import views
+from django.contrib.auth.decorators import login_required
+from .views import PostListView
 
 urlpatterns = [
-	url(r'^$', views.index, name='index')
+	url(r'^$', login_required(PostListView.as_view()), name='post_list')
 ]

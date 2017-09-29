@@ -1,6 +1,7 @@
-from django.http import HttpResponse
+from django.views.generic import ListView
+from .models import Post
 
 # Create your views here.
-
-def index(request):
-	return HttpResponse("Hello, blog!")
+class PostListView(ListView):
+	model = Post
+	template_name = 'blog/post_list.html'
