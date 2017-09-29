@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    {% if request.user.is_authenticated %}
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-end">
+        <a class="navbar-item" href="{% url 'post_list' %}">Blog</a>
+        <a class="navbar-item" href="{% url 'user_profile' %}">Profile</a>
+        <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
+      </div>
+    </nav>
+    {% endif %}
+    {% block content %}
+    {% endblock content%}
+    <script>
+      document.documentElement.style.setProperty('--header-color', '{{ profile.header_color }}')
+      document.documentElement.style.setProperty('--header-text-color', '{{ profile.header_text_color }}')
+      document.documentElement.style.setProperty('--bg-color', '{{ profile.bg_color }}')
+      document.documentElement.style.setProperty('--title-color', '{{ profile.title_color }}')
+      document.documentElement.style.setProperty('--text-color', '{{ profile.text_color }}')
+    </script>
+  </body>
+</html>

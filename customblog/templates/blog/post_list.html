@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ request.user.first_name }} {{ request.user.last_name }}'s Blog
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    {% for post in object_list %}
+    <div class="content">
+      <h2 class="post-title">{{ post.title }}</h2>
+      <p class="post-content">{{ post.content }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock content%}
