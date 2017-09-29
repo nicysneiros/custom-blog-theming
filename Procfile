@@ -1,0 +1,1 @@
+web: gunicorn customblog.wsgi --pythonpath customblog --log-file -
