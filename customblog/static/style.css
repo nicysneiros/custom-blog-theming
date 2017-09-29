@@ -1,0 +1,41 @@
+:root {
+	--header-color: white;
+	--header-text-color: #363636;
+	--bg-color: white;
+	--title-color: #363636;
+	--text-color: #363636;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: var(--bg-color);
+	height: 100%;
+}
+
+.hero {
+	background-color: var(--header-color);
+}
+
+.hero .title {
+	color: var(--header-text-color) !important;
+}
+
+.post-title {
+	color: var(--title-color) !important;
+}
+
+.post-content {
+	color: var(--text-color);
+}
+
+.login-panel {
+	width: 40%;
+	margin: auto;
+}
+
+.login-form {
+	width: 100%;
+}
